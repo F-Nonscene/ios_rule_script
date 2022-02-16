@@ -92,13 +92,13 @@ if (magicJS.read(blackKey)) {
           const topList = new Set([176, 222, 107]);
           // 102 开始为概念版id
           const bottomList = new Set([177, 178, 179, 181, 102, 103, 104, 105, 106]);
-          //let obj = JSON.parse(magicJS.response.body);
+          let obj = JSON.parse(magicJS.response.body);
           //if (obj["data"]["tab"]) {
            // let tab = obj["data"]["tab"].filter((e) => {
               //return tabNameList.has(e.name);
             //});
             //obj["data"]["tab"] = tab;
-          }
+          //}
           // 将 id（222 & 107）调整为Story功能按钮
           let storyAid = magicJS.read(storyAidKey);
           if (!storyAid) {
